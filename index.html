@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logoo.png" type="image/gif" sizes="20x20">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="cssfiles/mainstyletwo.css">
+    <link rel="stylesheet" href="cssfiles/owl.carousel.css">
+    <link rel="stylesheet" href="cssfiles/owl.theme.green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jsfiles/jquery.min.js"></script>
+    <script src="jsfiles/owl.carousel.min.js"></script>
+    <title>Char Dham Express</title>
+
+</head>
+<style>
+    .team-area .single-team img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+    .single-team {
+        width: 100%;
+        height: 320px;
+
+        box-sizing: border-box;
+        background: #fff;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        transition: .6s ease-out;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .single-team:hover {
+        transform: translateY(25px);
+    }
+
+    .single-team:hover:before {
+        opacity: 1;
+
+    }
+
+    .single-team:hover .ream-text {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .single-team:before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #000, transparent);
+        z-index: 2;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .single-team .ream-text {
+        position: relative;
+        z-index: 3;
+        color: #fff;
+        opacity: 0;
+        transform: translateY(60px);
+        transition: 0.5s;
+
+    }
+
+    .ream-text h2 {
+        margin: 0;
+        font-family: Shrikhand;
+        letter-spacing: 3px;
+
+    }
+
+    .ream-text p {
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin-top: 8px;
+        font-family: poppings;
+    }
+
+    .ream-text a {
+        width: 100%;
+        height: 50px;
+        display: inline-block;
+        border: 3px solid #e37d1d;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
+
+    }
+
+    .ream-text a i {
+        color: #fff;
+        padding: 10px 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <!-- sectionone menubar -->
+    <section class="sectionone" style="position: relative;">
+        <nav class="navbar navbar-dark" style="height: 120px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/finallogo.jpg" alt="">
+                </a>
+                <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="navbar-toggler-icon">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <a href="index.html">
+                            <li><button class="dropdown-item" style="color: #ffd800; " type="button">Home</button></li>
+                        </a>
+                        <a href="aboutus.html">
+                            <li><button class="dropdown-item" style="color: #ffd800; " type="button">About US</button>
+                            </li>
+                        </a>
+                        
+                        <a href="packages.html">
+                            <li><button class="dropdown-item" style="color: #ffd800; " type="button">Packages</button>
+                            </li>
+                        </a>
+                        <a href="contactus.html">
+                            <li><button class="dropdown-item" style="color: #ffd800; " type="button">Contact Us</button>
+                            </li>
+                        </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- section2 vdo -->
+    <section class="sectiontwo" style="margin-bottom:0px;">
+        <video autoplay muted width="100%" height="100%" controls loop>
+            <source src="images/tour.mp4" type="video/mp4">
+            <source src="images/tour.mp4" type="video/ogg">
+        </video>
+    </section>
+    <section class="sectiony container">
+        <br>
+        <h2 style="font-size: 20px;color:#ffd800;">Welcome to Char Dham Express</h2>
+        <p style=" line-height: 120%;color: white;">Let's go and forget ourselves in the dhams and pray till we all get
+            the blissful moksha. Hop on! Choo-choo! Chardham Express is departing! All aboard? Let us serve you a
+            memorable trip.</p>
+        <p style=" line-height: 120%;color: white;"> Vaishnavite Hindus believe that doing the holy chardham yatra helps
+            achieve "Moksha" (salvation).</p>
+        <br>
+    </section>
+    <section class="sectionf container">
+        <div class="row">
+            <div class="col-md-4" style="padding-left: 0px;padding-right:0px;">
+                <img src="images/mapexpress.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-8">
+                <div class="myinnercontent container">
+                    <h2 style="font-size: 20px;color:#ffd800;">Char Dham</h2>
+                    <p style=" line-height: 120%; color:white">It is located in the Garhwal region of the state of
+                        Uttrakhand. Akha-teej marks the beginning of the Char dham yatra. The 'Yatra' typically closes 2
+                        days after Diwali. It covers:-
+                    </p>
+                    <ul style="color: white;">
+                        <li>Yamunotri, the source of the Yamuna River and the head of the goddess Yamuna.</li>
+                        <li>Gangotri, the source of the Ganges and head of the goddess Ganga.</li>
+                        <li>Kedarnath, where the supreme Shiva is venerated as one of the twelve jyotirling.</li>
+                        <li>Badrinath, the seat of the god Vishnu in his aspect of Badrinarayan</li>
+                    </ul>
+                    <h2 style="font-size: 20px; padding-top:3px;color:#ffd800;">Do Dham</h2>
+                    <p style=" line-height: 120%; color:white;">Do dham consists of two ancient shrines namely-
+                        Kedarnath and Badrinath. Kedarnath is located in the Himalayas, about 3,583 m (11,755 ft) above
+                        sea level near Chorabari Glacier, the head of river Mandakini, and is flanked by snow-capped
+                        peaks, most prominently Kedarnath mountain. While Badrinath is a hold town located in Uttrakhand
+                        elevated to 3,300m (10,800ft) above the sea level.The temple in Badrinath is also a sacred
+                        pilgrimage site for Vaishnavites. Badrinath is also gateway to several mountaineering
+                        expeditions headed to mountains like Nilkantha. In earlier days, pilgrims used to walk hundreds
+                        of miles to visit Badrinath temple.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <section class="sectionprojects container"> 
+        <h2>Our Packages</h2>
+        <br>
+        <div class="row">
+            <div class="col-md-3 col-6" style="margin-bottom: 20px;">
+                <a href="">
+                    <div class="card" style="width: 100%;box-shadow: 2px 5px 12px black;">
+                        <img src="images/charpack.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body" style="border-radius: none;">
+                            <a href="packages.html" class="btn" style="background-color: #ffd800;box-shadow: 2px 5px 8px black;position: relative;
+                           left: 50%;
+                           -ms-transform: translateX(-50%);
+                           transform: translateX(-50%);">Know More</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-6" style="margin-bottom: 20px;">
+                <a href="">
+                    <div class="card" style="width: 100%;box-shadow: 2px 5px 12px black;">
+                        <img src="images/delhipack.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body" style="border-radius: none;">
+                            <a href="packages.html" class="btn" style="background-color: #ffd800;box-shadow: 2px 5px 8px black;position: relative;
+                            left: 50%;
+                            -ms-transform: translateX(-50%);
+                            transform: translateX(-50%);">Know More</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-6" style="margin-bottom: 20px;">
+                <a href="">
+                    <div class="card" style="width: 100%;box-shadow: 2px 5px 12px black;">
+                        <img src="images/dodham.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body" style="border-radius: none;">
+                            <a href="packages.html" class="btn" style="background-color: #ffd800;box-shadow: 2px 5px 8px black;position: relative;
+                            left: 50%;
+                            -ms-transform: translateX(-50%);
+                            transform: translateX(-50%);">Know More</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-6" style="margin-bottom: 20px;">
+                <a href="">
+                    <div class="card" style="width: 100%;box-shadow: 2px 5px 12px black;">
+                        <img src="images/haripack.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body" style="border-radius: none;">
+                            <a href="packages.html" class="btn" style="background-color: #ffd800;box-shadow: 2px 5px 8px black;position: relative;
+                            left: 50%;
+                            -ms-transform: translateX(-50%);
+                            transform: translateX(-50%);">Know More</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <br>
+    <hr>
+    <section class="sectionlast" style="background-color: #383838;">
+        <div class="container-fluid">
+            <p style=" line-height: 120%; color:white">A new travel venture entrepreneuring it's way to the top charts
+                with our staff accurately dedicated, supportive and customer friendly. We have rooted far and wide in
+                travel industry acquiring vast knowledge of chardham over many years of experience in tourism and public
+                dealing. Hence, you are with the perfectionists.</p>
+        </div>
+
+    </section>
+    <!-- whatsapp enquiry -->
+    <div class="centerwalatwo">
+        <a href="https://wa.me/919971788433"> <img src="images/finalwhatsap.png " alt="Shiva photocopy rdc"
+                class="pulsewalatwo"></a>
+    </div>
+    <!-- enquiry pulse -->
+    <div class="centerwala">
+        <a href="tel:9971788433" class="pulsewala"><i class="fa fa-phone fa-2x" aria-hidden="true" style="color: black;"></i> </a>
+    </div>
+    <!-- footer -->
+
+    <section class="footer myfooter" id="contactus">
+      
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container-fluid">
+                    <img src="images/finallogo.jpg" alt="" style="width:150px;height:100px;">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 footer-contact">
+                            <img src="images/shivaownr.jpg" class="img-fluid" alt="">
+                            <h3 style="color:#ffd800;">Char Dham Express</h3>
+                            <p class="text-white">
+                                Office No 70 , Ground Floor , World Trade Centre<br>
+                                Babbar Road , Connaught Place ,<br>
+                                New Delhi 110001<br>
+                                <br>
+                                <strong class="text-white" style="color:#ffd800;">WhatsApp:</strong>  +91-9971788433<br>
+                                <strong class="text-white" style="color:#ffd800;">Phone:</strong>   +91-9811137247<br>
+                                <strong class="text-white" style="color:#ffd800;">Email:</strong> Chardhamexpress2021@gmail.com<br>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-links">
+
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-links p-3">
+
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-newsletter">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-md-flex py-4 socialsection">
+                <!-- <div class="mr-md-auto text-center text-md-left" style="font-size: 10px;">
+                                       copy rightdata
+                </div> -->
+                <div class="social-links text-center text-md-right pt-3 pt-md-0 ">
+                    <a href=""> <i class="fa fa-facebook  fa-3x" aria-hidden="true"></i> </a>
+                    <a href=""> <i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+                    <a href=""> <i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </footer>
+        <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+    </section>
+   
+    </section>
+    <!--  -->
+    <br>
+    <section class="sectionlastcopyright" style="height: 50px;background-color:#ffd800;">
+        <div class="copyright mycopyboxcetenr"  style="color: #383838;">
+            &copy; Copyright <strong><span>Char Dham Express</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits text-white">
+            Designed & Developed by <a href="https://slanzapanika.com">Agranshu slanzapanika</a>
+        </div>
+    </section>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            center: true,
+            autoWidth: false,
+            items: 2,
+            loop: true,
+            autoplayHoverPause: true,
+            nav: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1520,
+            smartSpeed: 1500,
+            animateIn: 'linear',
+            animateOut: 'linear',
+            responsive: {
+                0: {
+                    items: 2,
+                },
+                350: {
+                    items: 2,
+                },
+                600: {
+                    items: 4,
+                },
+                800: {
+                    items: 4,
+                },
+                1024: {
+                    items: 6,
+                },
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logoo.png" type="image/gif" sizes="20x20">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="cssfiles/mainstyletwo.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" href="cssfiles/owl.carousel.css">
+    <link rel="stylesheet" href="cssfiles/owl.theme.green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jsfiles/jquery.min.js"></script>
+    <script src="jsfiles/owl.carousel.min.js"></script>
+    <script src="myScript.js"></script>
+    <title>Char Dham Express</title>
+
+</head>
+<style>
+    .team-area .single-team img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+    .single-team {
+        width: 100%;
+        height: 320px;
+
+        box-sizing: border-box;
+        background: #fff;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        transition: .6s ease-out;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .single-team:hover {
+        transform: translateY(25px);
+    }
+
+    .single-team:hover:before {
+        opacity: 1;
+
+    }
+
+    .single-team:hover .ream-text {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .single-team:before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #000, transparent);
+        z-index: 2;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .single-team .ream-text {
+        position: relative;
+        z-index: 3;
+        color: #fff;
+        opacity: 0;
+        transform: translateY(60px);
+        transition: 0.5s;
+
+    }
+
+    .ream-text h2 {
+        margin: 0;
+        font-family: Shrikhand;
+        letter-spacing: 3px;
+
+    }
+
+    .ream-text p {
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin-top: 8px;
+        font-family: poppings;
+    }
+
+    .ream-text a {
+        width: 100%;
+        height: 50px;
+        display: inline-block;
+        border: 3px solid #e37d1d;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
+
+    }
+
+    .ream-text a i {
+        color: #fff;
+        padding: 10px 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <!-- sectionone menubar -->
+    <section class="sectionone" style="position: relative;">
+        <nav class="navbar navbar-dark" style="height: 120px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/finallogo.jpg" alt="">
+                </a>
+                <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="navbar-toggler-icon">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <a href="index.html">
+                            <li><button class="dropdown-item" style="color: #ffd800; " type="button">Home</button></li>
+                        </a>
+                        <a href="aboutus.html">
+                            <li><button class="dropdown-item" style="color: #ffd800; " type="button">About US</button>
+                            </li>
+                        </a>
+
+                        <a href="packages.html">
+                            <li><button class="dropdown-item" style="color: #ffd800; " type="button">Packages</button>
+                            </li>
+                        </a>
+                        <a href="contactus.html">
+                            <li><button class="dropdown-item" style="color: #ffd800; " type="button">Contact Us</button>
+                            </li>
+                        </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- section2 vdo -->
+    <section class="sectiontabdata">
+        <div class="tabContainer container-fluid">
+            <div class="buttonContainer">
+                <button onclick="showPanel(0,'#383838')">Itinerary</button>
+                <button onclick="showPanel(1,'#383838')">Hotels & Package</button>
+                <button onclick="showPanel(2,'#383838')">Inclusions & Exclusions</button>
+                <button onclick="showPanel(3,'#383838')">Policy</button>
+            </div>
+            <div class="tabPanel">
+                <table class="table table-bordered" style="border: 2px solid #ffd800;color:white;">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="background-color: #ffd800;color:#ffd800;">First</th>
+                            <th scope="col" style="background-color: #ffd800;color:#ffd800;">Last</th>
+                            <th scope="col" style="background-color: #ffd800;color:#ffd800;">First</th>
+                            <th scope="col" style="background-color: #ffd800;color:#ffd800;">Last</th>
+                            <th scope="col" style="background-color: #ffd800;color:#ffd800;">Last</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- day 1 -->
+                        <tr>
+                            <td class="mydatai">DAY 01: </td>
+                            <td colspan="4">
+                                <p class="nydata2">HARIDWAR (222 KM: 6 TO 7 HRS)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <p class="mydata3">
+                                    Arrive New Delhi and we'll drive to Haridwar. On arrival at Haridwar, check in to
+                                    your hotel. In the evening, proceed to Har Ki Pauri to enjoy Ganga Aarti on the
+                                    banks of Ganges. Dinner and Overnight stay at Haridwar.
+                                </p>
+                            </td>
+                        </tr>
+                        <!-- day 2 -->
+                        <tr>
+                            <td class="mydatai">DAY 02: </td>
+                            <td colspan="4">
+                                <p class="nydata2">: HARIDWAR – BARKOT/KARSALI (205 KM: 7 TO 8 HRS/250 KM: 8 TO 9 HRS)
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <p class="mydata3">
+                                    This morning depart for Barkot, located on the foot of Yamunotri. Drive via
+                                    Mussoorie and visit Kempt Falls on the way. On arrival at Barkot, check-in to your
+                                    hotel/camp. Rest of the day is free to relax and store your energy for the Pahad
+                                    (hiII) Yatra of Yamunotri the next day. Dinner and Overnight stay at Barkot.
+                                </p>
+                            </td>
+                        </tr>
+                        <!-- day3 -->
+                        <tr>
+                            <td class="mydatai">DAY 03: </td>
+                            <td colspan="4">
+                                <p class="nydata2">: BARKOT/KHARSALI – YAMUNOTRI (45 KM: 2 HRS + 5 KM START TREK) –
+                                    BARKOT/KHARSALI </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <p class="mydata3">
+                                    After breakfast, depart for Hanumanchatti (40 Km), Janki Chatti (5 km). Here you
+                                    will begin the First Pahad Yatra of Yamunotri (5 Km trek). You can hire a Doli or a
+                                    horse, for your trek (Cost Not Included). The trek passes through lush green valley,
+                                    a profusion of conifers, rhododendrons, cacti and several species of Himalayan
+                                    shrubs.
+                                    Yamunotri (altitude 3,291 m), the western most shrine of the Char Dhams, is
+                                    dominated by Banderpunch (6,361 m). Yamunotri is the source of the river Yamuna, the
+                                    twin sister of Varna, the Lord of Death. Yamuna is also the daughter of Surya the
+                                    Sun. The actual source of the river originates from Champasar Glacier 1 km a head of
+                                    the shrine, at an altitude of 4,321 mts. On arrival by afternoon in Yamunotri take
+                                    holy dip in Yamuna River and perform Pooja, and take the same route back to Barkot,
+                                    check in at Hotel / Camp. Dinner and Overnight stay at hotel in Barkot.
+
+                                </p>
+                                <p class="mydata3">
+                                    Yamunotri Temple: Maharani Gularia of Jaipur built the temple in the 19th Century.
+                                    It was destroyed twice in the present century and rebuilt again.
+                                </p>
+                                <p class="mydata3">
+                                    Surya Kund: There are a Number of thermal springs in the vicinity of the temple,
+                                    which flows into numerous pools. The most important of these is Surya Kund.
+                                </p>
+                                <p class="mydata3">
+                                    Divya Shila: A rock pillar, worshipped before entering the Yamunotri Temple.
+                                </p>
+                            </td>
+                        </tr>
+                        <!-- day4 -->
+                        <tr>
+                            <td class="mydatai">DAY 04: </td>
+                            <td colspan="4">
+                                <p class="nydata2">BARKOT/KHARSALI – UTTARKASHI (85 KM: 3 HRS/132 KM: 4 TO 5 HRS)
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <p class="mydata3">
+                                    After breakfast check out from the Barkot hotel and drive to Uttarkashi. On arrival
+                                    check in into the hotel. Uttarkashi is situated on the banks of river Bhagirathi and
+                                    is famous for its historical monuments, Temples & Ashrams. In the evening, Visit the
+                                    famous Vishwanath Temple. Dinner and Overnight stay at Uttarkashi.
+                                </p>
+                            </td>
+                        </tr>
+                        <!-- day 5 -->
+                        <tr>
+                            <td class="mydatai">DAY 05: </td>
+                            <td colspan="4">
+                                <p class="nydata2">UTTARKASHI – GANGOTRI (97 KM: 3 TO 4 HRS) – UTTARKASHI
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <p class="mydata3">
+                                    Early morning breakfast at hotel and drive to Gangotri. Nestled in the magnificent
+                                    Garhwal Himalayas, Gangotri is set at an altitude of 3048 mts. Upon arrival at
+                                    Gangotri take a holy dip in the sacred river Ganges which is also called Bhagirathi
+                                    at its origin Visit the Gangotri Temple. The 18th century's temple dedicated to
+                                    Goddess Ganga is located near a sacred stone where King Bhagirathi worshipped Lord
+                                    Shiva. Ganga is believed to have touched earth at this spot. The temple is an
+                                    exquisite 20 ft. high structure made of white granite. After performing Pooja Late
+                                    afternoon drive back to Uttarkashi. Dinner & Overnight stay at Uttarkashi.
+                                </p>
+                                <p class="mydata3">
+                                    Gangotri Temple: Gangotri temple is 18th Century temple dedicated to Goddess Ganga.
+                                    It is located near a sacred stone where king Bhagirath worshipped Lords Shiva. Ganga
+                                    “Deva Yagna” hear to atone the death of their kinsmen in the epic battle of
+                                    Mahabharat. The temple is an exquisite 20ft.high structure made of white granite
+                                </p>
+                                <p class="mydata3">
+                                    Submerged Shivling: Submerged in the river, this natural rock Shivling is the place
+                                    where, according to mythology Lord Shiva sat when he received the Ganga in his
+                                    matted lock. It is visible in winter months when water level decreases.
+                                </p>
+                                <p class="mydata3">
+                                    Kedar Ganga Sangam: Around 100 Yards from the Ganga Temple flows the river Kedar
+                                    Ganga. Starting from the Kedar Valle, this river meets the Bhagirathi on its left
+                                    bank.
+                                </p>
+                            </td>
+                        </tr>
+                        <!-- day 6 -->
+                        <tr>
+                            <td class="mydatai">DAY 06: </td>
+                            <td colspan="4">
+                                <p class="nydata2">UTTARKASHI – GUPTKASHI (203 KM / 7 TO 8 HRS)
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <p class="mydata3">
+                                    After early morning breakfast check out from the hotel and drive for Guptkashi. On
+                                    arrival check in at hotel. Rest of the day free to explore the Guptkashi town.
+                                    Dinner and Overnight stay in Guptkashi hotel/Camps.
+                                </p>
+                            </td>
+                        </tr>
+                        <!-- day 7 -->
+                        <tr>
+                            <td class="mydatai">DAY 07: </td>
+                            <td colspan="4">
+                                <p class="nydata2">GUPTKASHI – PHATA - KEDARNATH – PHATA - GUPTKASHI (BY HELICOPTER)
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <p class="mydata3">
+                                    Early morning drive to Phata Helipad, from where you will have your Helicopter to
+                                    Kedarnath. Passengers would be given 1-2 Hours for darshan and one can avail
+                                    priority darshan tickets upon arrival in Kedarnath which are available only for
+                                    Helicopter passengers. After darshan you will return back to Phata by Helicopter.
+                                    The vehicles wait for you in Helipad and drive to your hotel. Dinner and Overnight
+                                    at Guptkashi Hotel.
+
+
+                                </p>
+                                <p class="mydata3">
+                                    Kedarnath Temple: The Kedarnath shrine, one of the 12 jyotirlinga of Lord Shiva, is
+                                    a scenic spot situated, against the backdrop of the majestic Kedarnath range. Kedar
+                                    is another name of Lord Shiva, the protector and the destroyer. According to legend,
+                                    the Pandavas after having won over the Kaurava in the Kurukshetra war, felt guilty
+                                    of having killed their own brothers and sought the blessings of Lord Shiva for
+                                    redemption. He eluded them repeatedly and while fleeing took refuge at Kedarnath in
+                                    the form of a bull. On being followed he dived into the ground, leaving his hump on
+                                    the surface. The remaining portions of Lord Shiva appeared at four other places and
+                                    are worshipped there as his manifestations. The arms appeared at Tungnath, the face
+                                    at Rudranath, the belly at Madhmaheshwar and his locks (hair) with head at
+                                    Kalpeshwar. Kedarnath and the four above-mentioned shrines are treated as Panch
+                                    Kedar. The present temple built in 8th century AD by Adi Guru Shankracharya lies
+                                    adjacent to the site of an ancient temple built by Pandavas. Temple has a Conical
+                                    Lingam - the assemblies of pilgrims and visitors. The temple is more than 1000 year
+                                    old. Behind the Kedarnath temple lies the Samadhi of final resting place of Adi Guru
+                                    Shankracharya. It is believed that after establishing the four Dham in India he went
+                                    for his Samadhi at an early age of 32 years….
+                                </p>
+                            </td>
+                        </tr>
+                        <!-- day 8 -->
+                        <tr>
+                            <td class="mydatai">DAY 08: </td>
+                            <td colspan="4">
+                                <p class="nydata2">GUPTKASHI – JOSHIMATH – BADRINATH (200 KM: 7 TO 8 HRS)
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <p class="mydata3">
+                                    This morning, you check out of the hotel at 08:00 am and drive to Badrinath via
+                                    Joshimath. After driving through some wonderful Ghat road you arrive at Badrinath.
+                                    On arrival check into the hotel. After some rest and refreshments you are all set to
+                                    go to Badrinath Temple for darshan in the evening. But first you have to go to Tapt
+                                    Kund (Hot Spring), take bath and then go to the temple. Dedicated to Lord Vishnu,
+                                    the temple of Shri Badrinath Ji is 15 meters in height, built in the form of a cone
+                                    with a small cupola of a gilt bull and spire. Later back to hotel. Dinner and
+                                    Overnight stay at hotel.
+                                </p>
+                                <p class="mydata3">
+                                    Badrinath: Cradled in the twin Mountain ranges of Nar and Narayan is the holies of
+                                    the four main shrines-Badrinath along the left bank of Alaknanda with the towering
+                                    Neelkanth peak as the splendid backdrop. Once the spot was carpeted with “Badri “or
+                                    wild berries and hence was famous as Badrivan.
+                                </p>
+                                <p class="mydata3">
+                                    Legend has it when the ganga was requested to descend to earth to help suffering
+                                    humanity, the earth was unable to with stand the force of its descent, There for the
+                                    mighty ganga was split in to 12 holy channels, Alaknanda was one of then that later
+                                    became the abode of Lord Vishnu or Badrinath Ji…..
+                                </p>
+                                <p class="mydata3">
+                                    Badrinath one of the 'Four Dhams' is one of the most celebrated pilgrimage spots of
+                                    the country and is situated at an elevation of 3,133 meters, this revered spot was
+                                    once carpeted with wild berries. Thus the place got the name "Badri van", meaning
+                                    "forest of berries".
+                                </p>
+                                <p class="mydata3">
+                                    Tapt Kund: Natural thermal springs on the bank of the river Alaknanda, where it is
+                                    customary to bathe before entering the Badrinath temple.
+                                </p>
+                                <p class="mydata3">
+                                    Narad Kund: A recess in the river, near Tapt Kund, forming a pool from where the
+                                    Badrinath idol was recovered.
+                                </p>
+                                <p class="mydata3">
+                                    Braham Kapal: A flat platform on the bank of river Alaknanda. Hindus perform
+                                    propitiating rites for their deceased ancestors.
+                                </p>
+                                <p class="mydata3">
+                                    Sheshnetra: 1.5kms away is a boulder having an impression of the legendary serpent,
+                                    better known as the Sheshnag's eye.
+                                </p>
+                                <p class="mydata3">
+                                    Charanpaduka: 3kms away is a beautiful meadow where the footprint of Lord Vishnu is
+                                    seen on a boulder.
+                                </p>
+                                <p class="mydata3">
+                                    Mata Murty Temple: Devoted to the mother of Sri Badrinath Ji. Other important
+                                    temples include Sesh Netra Temple, Urvashi Temple and Charanpaduka.
+                                </p>
+                                <p class="mydata3">
+                                    Mana Village: Inhabited by an Indo-Mongolian tribe, it is the last Indian village
+                                    before Tibet.
+
+                                </p>
+                                <p class="mydata3">
+                                    Vasundhara: As the name suggests, vasundhara is a magnificent water fall. This place
+                                    is 5 kms. From Badrinath out of which 2 kms is motorable up to Mana.
+                                </p>
+                                <p class="mydata3">
+                                    Bhim Pul: On the other side of Mana village, a massive rock forming a natural
+                                    bridge, lies over the roaring Saraswati River. It presents a spectacular view of
+                                    water thundering down through the narrow passage under the rock and is believed to
+                                    have been placed there by Bhim, the second eldest among the five Pandavas brothers.
+                                </p>
+                                <p class="mydata3">
+                                    Vyas Gufa (cave): Near Mana Village, this is a rock-cave where Ved Vyas is believed
+                                    to have composed the Mahabharata and the pauranic commentaries.
+                                </p>
+                            </td>
+                        </tr>
+                        <!-- day 9 -->
+                        <tr>
+                            <td class="mydatai">DAY 09: </td>
+                            <td colspan="4">
+                                <p class="nydata2">: BADRINATH – JOSHIMATH – RUDRAPRAYAG (165 KM: 6 HRS)
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <p class="mydata3">
+                                    This morning, go for Badrinath Darshan. After Darshan return back to hotel,
+                                    breakfast at hotel and proceed for Badrinath local sightseeing visit Mana Village,
+                                    Vyas Gufa, Ganesh Gufa, and Mata Murti temple. Afternoon driver back to Rudraprayag
+                                    via Karanprayag. Rudraprayag is a small pilgrim town on the holy confluence of river
+                                    Alaknanda and
+                                    Mandakini. On arrival check in at hotel. Rest of the day free to explore the
+                                    Rudraprayag town. Dinner and Overnight stay at hotel.
+
+                                </p>
+                            </td>
+                        </tr>
+                        <!-- day 10 -->
+                        <tr>
+                            <td class="mydatai">DAY 10: </td>
+                            <td colspan="4">
+                                <p class="nydata2">RUDRAPRAYAG– RISHIKESH/HARIDWAR (230 KM: 7 TO 8 HRS)
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <p class="mydata3">
+                                    Early morning, after breakfast, you drive downhill to Rishikesh a spiritual city and
+                                    the Yoga capital of the world. On reaching Rishikesh you'll do the Rishikesh
+                                    sightseeing visit Ram Jhula and Laxman Jhula. Evening drive to Haridwar. On arrival
+                                    check in at hotel. Dinner and Overnight stay at hotel.
+                                </p>
+                            </td>
+                        </tr>
+                        <!-- day 11 -->
+                        <tr>
+                            <td class="mydatai">DAY 11: </td>
+                            <td colspan="4">
+                                <p class="nydata2">
+                                    HARIDWAR – DELHI (225 KM / 6 TO 7 HRS)
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <p class="mydata3">
+                                    Morning breakfast at hotel, and you are on your last lap of this Chardham Yatra
+                                    journey. Drive back to Delhi. On reaching Delhi transfer to Railway Station/Airport.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tabPanel  mytable2">
+                <h2 style="color:white;font-size:15px;">HOTELS USED IN THE PACKAGE</h2>
+                <table class="table table-bordered" style="border: 2px solid #ffd800;color:white;">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="background-color: #ffd800;color:#383838">City</th>
+                            <th scope="col" style="background-color: #ffd800;color:#383838">Standard Package</th>
+                            <th scope="col" style="background-color: #ffd800;color:#383838">Superior Package</th>
+                            <th scope="col" style="background-color: #ffd800;color:#383838">Deluxe Package</th>
+                            <th scope="col" style="background-color: #ffd800;color:#383838">Luxury Package</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Haridwar</td>
+                            <td>Hotel Amaya/Similar</td>
+                            <td>Hotel Shivay/Similar</td>
+                            <td>Hotel Regents Orko’s/Similar</td>
+                            <td>Hotel Godwin/Similar</td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td>Barkot/Kharshali</td>
+                            <td>Hotel Surya Palace/Similar</td>
+                            <td>Shiv Shakti Eco Resort/Similar</td>
+                            <td>Rig Veda Resort/Similar</td>
+                            <td>Camp Nirvana/Similar</td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td>Uttarkashi</td>
+                            <td>Hotel Ekant/Similar</td>
+                            <td>Hotel Shivay/Similar</td>
+                            <td>Hotel Regents Orko’s/Similar</td>
+                            <td>Hotel Godwin/Similar</td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td>Guptkashi</td>
+                            <td>JPJ Palace/Similar</td>
+                            <td>Kedar Valley Resort/Similar</td>
+                            <td>Advanta Camp/Similar</td>
+                            <td>Shivalik Valley Resort/Similar</td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td>Badrinath</td>
+                            <td>Hotel Kanchan/Similar</td>
+                            <td>Hotel Dwarikesh /Similar</td>
+                            <td>Hotel Charan Paduka/Similar</td>
+                            <td>Hotel Sarovar/KDB  Resort/Similar</td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td>Rudraprayag/Srinagar</td>
+                            <td>Hotel Deluxe/Similar</td>
+                            <td>Hotel Shargrila/Similar</td>
+                            <td>Hotel Samrat Resort/Similar</td>
+                            <td>Hotel Monal Resort/Similar</td>
+                        </tr>
+                        <!--  -->
+                    </tbody>
+                </table>
+<br>
+                <h2 style="color:white;font-size:15px;">PACKAGE COST – PER PERSON BASIS</h2>
+                <table class="table table-bordered" style="border: 2px solid #ffd800;color:white;">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="background-color: #ffd800;color:#383838">No. of Pax</th>
+                            <th scope="col" style="background-color: #ffd800;color:#383838">Type of Vehicle</th>
+                            <th scope="col" style="background-color: #ffd800;color:#383838">Standard</th>
+                            <th scope="col" style="background-color: #ffd800;color:#383838">Superior</th>
+                            <th scope="col" style="background-color: #ffd800;color:#383838">Deluxe</th>
+                            <th scope="col" style="background-color: #ffd800;color:#383838">Luxury</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>02 Pax</td>
+                            <td>Sedan</td>
+                            <td>34999</td>
+                            <td>39999</td>
+                            <td>43999</td>
+                            <td>50999</td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td>04 Pax</td>
+                            <td>SUV</td>
+                            <td>29999</td>
+                            <td>32999</td>
+                            <td>35999</td>
+                            <td>50999</td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td>06 Pax</td>
+                            <td>SUV</td>
+                            <td>24999</td>
+                            <td>28999</td>
+                            <td>32999</td>
+                            <td>40999</td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td>08 Pax</td>
+                            <td>Tempo Traveler</td>
+                            <td>25999</td>
+                            <td>29999</td>
+                            <td>33999</td>
+                            <td>41999</td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td>10 Pax</td>
+                            <td>Tempo Traveler</td>
+                            <td>22999</td>
+                            <td>27999</td>
+                            <td>30999</td>
+                            <td>38999</td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td>12 Pax</td>
+                            <td>Tempo Traveler</td>
+                            <td>19999</td>
+                            <td>25999</td>
+                            <td>28999</td>
+                            <td>36999</td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td>Extra Adult Cost</td>
+                            <td></td>
+                            <td>14500</td>
+                            <td>18000</td>
+                            <td>20500</td>
+                            <td>23500</td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td>Child with bed cost</td>
+                            <td></td>
+                            <td>13500</td>
+                            <td>16500</td>
+                            <td>19000</td>
+                            <td>22000</td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td>Child without bed Cost</td>
+                            <td></td>
+                            <td>12000</td>
+                            <td>14500</td>
+                            <td>18000</td>
+                            <td>20500</td>
+                        </tr>
+                        <!--  -->
+                        
+                    </tbody>
+                </table>
+                <h2 style="font-size: 20px;color:#ffd800;">Notes</h2>
+                <ul style="color: white;">
+                   <li style="font-size:15px;text-align:left;">Rates are not valid for Festive peak season</li>
+                   <li style="font-size:15px;text-align:left;">Rates are based on Hotels Subject to Availability at the time of making Reservation. In case of unavailability in mentioned hotels, alternate accommodation will be arranged in a similar category hotel</li>
+                   <li style="font-size:15px;text-align:left;">Rates are subject to change if there is any Fair & Festival, Major conference, events in travel destination.</li>
+                   <li style="font-size:15px;text-align:left;">Early check in / late checks out is subject to availability of rooms. In Chardham sector maximum hotels are preferring 12:00 Noon Check in & check out timing.</li>
+                   <li style="font-size:15px;text-align:left;">Vehicle confirmed will be as per Itinerary and not at disposal. AC will work only in the plains and will be switched off during hill drives. Especially for the Chardham sector Ac can work only in Haridwar & Dehradun's plain / surface area. </li>
+                   <li style="font-size:15px;text-align:left;">All sightseeing mentioned are subject to weather conditions, political conditions & traffic conditions in the destination.</li>
+                   <li style="font-size:15px;text-align:left;">Any cancellation or delay in hotel check in due to third party services (like helicopter / pony / Palaki), the retention will be charged. The next allocation for the hotels on same destination is subject to the availabilities. </li>
+                   <li style="font-size:15px;text-align:left;">Any sightseeing missed due to natural calamities / weather conditions / for any unforeseen reasons is non-refundable or non-adjustable</li>
+                   <li style="font-size:15px;text-align:left;">We reserve the right to alter, amend, change or modify the tour package and itineraries before or during the tour. We will make reasonable efforts to notify you promptly of such changes / events sufficiently in advance during booking or prior to departure of the tour.</li>
+                   <li style="font-size:15px;text-align:left;">All entrances fees will be on direct payment basis as per Itinerary</li>
+                   <li style="font-size:15px;text-align:left;">It is not advisable to travel in night, if necessary supplement charge applicable</li>
+                </ul>
+            </div>
+            <div class="tabPanel">
+                <h2 style="font-size: 20px;color:#ffd800;">Package Inclusions</h2>
+                <ul style="color: white;">
+                   <li style="font-size:15px;text-align:left;">2 nights stay at hotel in Haridwar with MAP</li>
+                   <li style="font-size:15px;text-align:left;">2 nights stay in hotel in Barkot/Kharsali with MAP</li>
+                   <li style="font-size:15px;text-align:left;">2 nights stay at hotel in Uttarkashi with MAP</li>
+                   <li style="font-size:15px;text-align:left;">2 nights stay in hotel in Guptkashi with MAP</li>
+                   <li style="font-size:15px;text-align:left;">1 night stays at hotel in Badrinath with MAP</li>
+                   <li style="font-size:15px;text-align:left;">1 night stay at hotel Rudraprayag with MAP</li>
+                   <li style="font-size:15px;text-align:left;">Accommodation on twin/double sharing basis with Extra Bed/CWB & CNB</li>
+                   <li style="font-size:15px;text-align:left;">Meals plan (MAP) - Breakfast & Dinner: Veg meals on Fixed Menu basis at Hotels</li>
+                   <li style="font-size:15px;text-align:left;">Transfer & Sightseeing by Ac Vehicle (A/c will switch off in Hills)</li>
+                   <li style="font-size:15px;text-align:left;">Diver Allowance, Toll tax, parking Charges</li>
+                </ul>
+                <br>
+                <h2 style="font-size: 20px;color:#ffd800;">Package Exclusions</h2>
+                <ul style="color: white;">
+                   <li style="font-size:15px;text-align:left;">GST @ 5 %</li>
+                   <li style="font-size:15px;text-align:left;">Air Fare/Train Fare</li>
+                   <li style="font-size:15px;text-align:left;">Meals other than those mentioned explicitly in the itinerary.  </li>
+                   <li style="font-size:15px;text-align:left;">Personal expenses like portages, tips, laundry & Rafting etc</li>
+                   <li style="font-size:15px;text-align:left;">Any activity not mentioned in the inclusions. </li>
+                   <li style="font-size:15px;text-align:left;">Charges of palki, pony & Helicopter tickets etc.</li>
+                </ul>
+
+                <br>
+                <P style="font-size:15px;text-align:left;;color:white;"> <span style="font-size: 20px;color:#ffd800;">Note :</span> Supplement Cost for Helicopter ticket- Kedarnath Darshan @ INR 9000 + GST. Per person extra on sharing basis (Phata / Sersi – Kedarnath - Phata / Sersi)- kindly note that rate is based on last year helicopter ticket cost, in case of any change of fare as per government policy excess amount will be charged from customer. </P>
+            </div>
+            <div class="tabPanel">
+                <h2 style="font-size: 20px;color:#ffd800;">PAYMENT POLICY</h2>
+                <ul style="color: white;">
+                   <li style="font-size:15px;text-align:left;">Deposit of 25% of the package cost at the time of booking</li>
+                   <li style="font-size:15px;text-align:left;">Need 50% payment of the package cost, 30 days prior to departure date</li>
+                   <li style="font-size:15px;text-align:left;">Need 100% payment of the package cost, 15 days prior to departure date</li>
+                </ul>
+                <br>
+                <h2 style="font-size: 20px;color:#ffd800;">CANCELLATION POLICY</h2>
+                <ul style="color: white;">
+                    <li style="font-size:15px;text-align:left;">25% of full tour cost - 30 days prior to arrival</li>
+                    <li style="font-size:15px;text-align:left;">50% of full tour cost - between 20 & 29 days prior to tour</li>
+                    <li style="font-size:15px;text-align:left;">75% of full tour cost - between 19 & 10 days prior to tour</li>
+                    <li style="font-size:15px;text-align:left;">100% - within 9 days prior to tour</li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- whatsapp enquiry -->
+    <div class="centerwalatwo">
+        <a href="https://wa.me/919971788433"> <img src="images/finalwhatsap.png " alt="Shiva photocopy rdc"
+                class="pulsewalatwo"></a>
+    </div>
+    <!-- enquiry pulse -->
+    <div class="centerwala">
+        <a href="tel:9971788433" class="pulsewala"><i class="fa fa-phone fa-2x" aria-hidden="true"
+                style="color: black;"></i> </a>
+    </div>
+    <!-- footer -->
+
+    <section class="footer myfooter" id="contactus">
+
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container-fluid">
+                    <img src="images/finallogo.jpg" alt="" style="width:150px;height:100px;">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 footer-contact">
+                            <img src="images/shivaownr.jpg" class="img-fluid" alt="">
+                            <h3 style="color:#ffd800;">Char Dham Express</h3>
+                            <p class="text-white">
+                                Office No 70 , Ground Floor , World Trade Centre<br>
+                                Babbar Road , Connaught Place ,<br>
+                                New Delhi 110001<br>
+                                <br>
+                                <strong class="text-white" style="color:#ffd800;">WhatsApp:</strong> +91-9971788433<br>
+                                <strong class="text-white" style="color:#ffd800;">Phone:</strong> +91-9811137247<br>
+                                <strong class="text-white" style="color:#ffd800;">Email:</strong>
+                                Chardhamexpress2021@gmail.com<br>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-links">
+
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-links p-3">
+
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-newsletter">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-md-flex py-4 socialsection">
+                <!-- <div class="mr-md-auto text-center text-md-left" style="font-size: 10px;">
+                                       copy rightdata
+                </div> -->
+                <div class="social-links text-center text-md-right pt-3 pt-md-0 ">
+                    <a href=""> <i class="fa fa-facebook  fa-3x" aria-hidden="true"></i> </a>
+                    <a href=""> <i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+                    <a href=""> <i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </footer>
+        <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+    </section>
+
+    </section>
+    <!--  -->
+    <br>
+    <section class="sectionlastcopyright" style="height: 50px;background-color:#ffd800;">
+        <div class="copyright mycopyboxcetenr" style="color: #383838;">
+            &copy; Copyright <strong><span>Char Dham Express</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits text-white">
+            Designed & Developed by <a href="https://slanzapanika.com">Agranshu slanzapanika</a>
+        </div>
+    </section>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            center: true,
+            autoWidth: false,
+            items: 2,
+            loop: true,
+            autoplayHoverPause: true,
+            nav: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1520,
+            smartSpeed: 1500,
+            animateIn: 'linear',
+            animateOut: 'linear',
+            responsive: {
+                0: {
+                    items: 2,
+                },
+                350: {
+                    items: 2,
+                },
+                600: {
+                    items: 4,
+                },
+                800: {
+                    items: 4,
+                },
+                1024: {
+                    items: 6,
+                },
+            }
+        });
+    </script>
+    <script src="myScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

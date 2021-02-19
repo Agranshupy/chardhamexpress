@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sectionpackages .row .col-12 .row .innerdata .mybuttonsdata{
+    border: none;
+    padding: 4px;
+    background-color: #ffd800;
+    font-weight: 400;
+    box-shadow: 2px 5px 10px black;
+    margin-top: 15px;
+}
+.sectionpackages .row .col-12{
+    box-shadow: 2px 5px 10px black;
+    margin-bottom: 40px;
+   
+}
+.sectionpackages .row .col-12 .row img{
+width: 100%;
+padding-left: 0px;
+margin-left: 0px;
+height: 100%;
+}
+.sectionpackages .row .col-12 .row .col-3{
+   padding-left: 2px;
+   padding-right: 2px; 
+}
+.sectionpackages .row .col-12 .row h6{
+    margin-top: 12px;
+}
+@media(max-width:756px){
+    .sectionpackages .row .col-12 .row .innerdata .mybuttonsdata{
+        border: none;
+        padding: 4px;
+        margin-bottom: 10px;
+        background-color: #ffd800;
+        font-weight: 400;
+        box-shadow: 2px 5px 10px black;
+        margin-top: 15px;
+    }
+    .sectionpackages .row .col-12 .row h6{
+    font-size: 11px;
+    }
+}

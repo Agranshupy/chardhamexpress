@@ -1,0 +1,277 @@
+/* menu bar */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #383838;
+}
+/* menu bar */
+.sectionone{
+  background-color: #383838;
+
+}
+.sectionone .navbar{
+  background-color: #383838;
+
+}
+.sectionone .collapse{
+  background-color: #383838;
+}
+.sectionone .navbar .container-fluid .btn-group .btn{
+  color: #ffd800;  
+  border-color:#ffd800;
+  background-color: #ffd800;
+}
+.sectionone .navbar .container-fluid .navbar-toggler{
+  color: #ffd800;  
+  border-color:#ffd800;
+  background-color: #ffd800;
+}
+.sectionone .navbar .container-fluid .btn-group .btn .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.sectionone .navbar .container-fluid .btn-group .dropdown-menu{
+  background: rgba(0, 0, 0, 0.4);
+  color: #ffd800;  
+}
+.sectionone .navbar .container-fluid .navbar-brand {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  }
+.sectionone .navbar .container-fluid .navbar-brand img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+height: 100px;
+width: 250px;
+}
+@media(max-width:760px){
+  .sectionone .navbar .container-fluid .navbar-brand img{
+  width: 150px;
+  }
+  .sectionone .navbar .container-fluid .navbar-brand {
+    display: block;
+    margin-left: 0px;
+  
+    
+    }
+}
+.sectionone .collapse .p-4 .nav-item a{
+  color: #ffd800;
+  font-weight: 500;
+  font-size: large;
+}
+/* sectiony */
+.sectiony{
+  background-color: #383838;
+}
+/* section f */
+.sectionf{
+    background-color: #383838;
+  }
+  .sectionf .myinnercontent{
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+  .sectionf .myinnercontent h2{
+  color: #e37d1d;
+  }
+  .sectionf .myinnercontent p{
+    color:white;
+   
+  }
+  .sectionf .myinnercontent a{
+    background-color: #e37d1d;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    box-shadow: 2px 5px 8px black;
+   
+  }
+  .myfooter #footer .socialsection .social-links .fa-instagram{
+    color: #e84393;
+   background-color: #fff;
+  
+    padding: 3px;
+  
+    /* box-shadow: 1px 4px 2px 2px #dcdde1; */
+    transition: all 2s;
+  }
+  .myfooter #footer .socialsection .social-links .fa-instagram:hover{
+    transform: scale(2);
+  }
+  .myfooter #footer .socialsection .social-links .fa-youtube{
+    color: #e84118;
+  
+    background-color: #fff;
+    padding: 3px;
+  
+    /* box-shadow: 1px 4px 2px 2px #dcdde1; */
+    transition: all 2s;
+  }
+  .myfooter #footer .socialsection .social-links .fa-youtube:hover{
+    transform: scale(2);
+  }
+  .myfooter #footer .socialsection .social-links .fa-facebook{
+    background-color: #fff;
+    padding: 3px;
+    
+    /* box-shadow: 1px 4px 2px 2px #dcdde1; */
+    transition: all 2s;
+    
+  }
+  .myfooter #footer .socialsection .social-links .fa-facebook:hover{
+    transform: scale(2);
+  }
+  .myfooter #footer .socialsection .social-links .fa-linkedin{
+    background-color: #fff;
+  
+    padding: 3px;
+  
+    /* box-shadow: 1px 4px 2px 2px #dcdde1; */
+    transition: all 2s;
+  }
+  .myfooter #footer .socialsection .social-links .fa-linkedin:hover{
+    transform: scale(2);
+  }
+  .myfooter #footer .socialsection .social-links .fa-twitter{
+    background-color: #fff;
+    
+    padding: 3px;
+  
+    /* box-shadow: 1px 4px 2px 2px #dcdde1; */
+    transition: all 2s;
+  }
+  .myfooter #footer .socialsection .social-links .fa-twitter:hover{
+    transform: scale(2);
+  }
+  .footer #footer .footer-top .container-fluid .row .footer-contact h3{
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .footer #footer .footer-top .container-fluid .row .footer-contact p{
+    font-size: 12px;
+   
+  }
+  @media(max-width:991px){
+    .footer #footer .footer-top .container-fluid .row .footer-contact h3{
+      font-size: 9px;
+      font-weight: 700;
+    }
+    .footer #footer .footer-top .container-fluid .row .footer-contact p{
+      font-size: 9px;
+     
+    }
+  }
+ 
+ 
+.sectionprojects .row .col-md-3 a .card img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+  }
+  .sectionprojects .row .col-md-3 a .card .card-body .btn{
+    background-color: #ffd800;
+    box-shadow: 2px 5px 8px black;
+  }
+  /* whatsapp and call */
+  /* 11111111111111111111111111111111111111 enquiry pulse */
+.centerwala .pulsewala{
+  width: 50px;
+  height: 50px;
+  background: #ffd800;
+  position:fixed;
+  left: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  
+  font-family: Verdana;
+  animation: myanimatedataone 3s linear infinite;
+  z-index: 11111111111111111111111111;
+ 
+}
+@keyframes myanimatedataone {
+  0%{
+    box-shadow: 0 0 0 0 rgba(255,255,0,.7), 0 0 0 0 rgba(255,255,0,.7);  
+  }
+  40%{
+      box-shadow: 0 0 0 50px rgba(255,109,74,0), 0 0 0 0 rgba(255,255,0, 0.7);  
+  }
+  80%{
+      box-shadow: 0 0 0 50px rgba(255,109,74,0), 0 0 0 30px rgba(255,109,74,0);  
+  }
+  100%{
+      box-shadow: 0 0 0 0 rgba(255,109,74,0), 0 0 0 30px rgba(255,109,74,0);  
+  }
+}
+/* whatsapp */
+.centerwalatwo .pulsewalatwo{
+  width: 52px;
+  height: 52px;
+  /* background: green; */
+  position:fixed;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 100px;
+  font-family: Verdana;
+  animation: myanimatedata 3s linear infinite;
+  z-index: 11111111111111111111111111;
+  }
+
+  @keyframes myanimatedata {
+  0%{
+    box-shadow: 0 0 0 0 rgba(0,255,74,.7), 0 0 0 0 rgba(0,255,74,.7);  
+  }
+  40%{
+      box-shadow: 0 0 0 50px rgba(255,109,74,0), 0 0 0 0 rgba(0,255,0,.7);  
+  }
+  80%{
+      box-shadow: 0 0 0 50px rgba(255,109,74,0), 0 0 0 30px rgba(255,109,74,0);  
+  }
+  100%{
+      box-shadow: 0 0 0 0 rgba(255,109,74,0), 0 0 0 30px rgba(255,109,74,0);  
+  }
+  }
+  /* copy right box css */
+.sectionlastcopyright .mycopyboxcetenr{
+    text-align: center;
+}
+.sectionlastcopyright .credits{
+  text-align: center;
+  background-color: #ffd800;
+}
+@media(max-width:756px){
+  .sectionlastcopyright .mycopyboxcetenr{
+    font-size: 8px;
+}
+.sectionlastcopyright .credits{
+  font-size: 8px;
+}
+}
+/* our pack heading */
+.sectionprojects h2{
+  color: #fff;
+            font-size: 40px;
+            text-align: center;
+            text-shadow: 0px 0px 10px #ffd800,
+                0px 0px 20px #ffd800,
+                0px 0px 30px #ffd800,
+                0px 0px 40px #ffd800,
+                0px 0px 50px #ffd800,
+                0px 0px 60px #ffd800,
+                0px 0px 70px #ffd800,
+                0px 0px 80px #ffd800;
+}
