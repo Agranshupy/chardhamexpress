@@ -1,1 +1,516 @@
-working with this
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logoo.png" type="image/gif" sizes="20x20">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="cssfiles/mainstyletwo.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" href="cssfiles/owl.carousel.css">
+    <link rel="stylesheet" href="cssfiles/owl.theme.green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jsfiles/jquery.min.js"></script>
+    <script src="jsfiles/owl.carousel.min.js"></script>
+    <script src="myScript.js"></script>
+    <title>Char Dham Express</title>
+
+</head>
+<style>
+    .team-area .single-team img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+    .single-team {
+        width: 100%;
+        height: 320px;
+
+        box-sizing: border-box;
+        background: #fff;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        transition: .6s ease-out;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .single-team:hover {
+        transform: translateY(25px);
+    }
+
+    .single-team:hover:before {
+        opacity: 1;
+
+    }
+
+    .single-team:hover .ream-text {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .single-team:before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #000, transparent);
+        z-index: 2;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .single-team .ream-text {
+        position: relative;
+        z-index: 3;
+        color: #fff;
+        opacity: 0;
+        transform: translateY(60px);
+        transition: 0.5s;
+
+    }
+
+    .ream-text h2 {
+        margin: 0;
+        font-family: Shrikhand;
+        letter-spacing: 3px;
+
+    }
+
+    .ream-text p {
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin-top: 8px;
+        font-family: poppings;
+    }
+
+    .ream-text a {
+        width: 100%;
+        height: 50px;
+        display: inline-block;
+        border: 3px solid #e37d1d;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
+
+    }
+
+    .ream-text a i {
+        color: #fff;
+        padding: 10px 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <!-- sectionone menubar -->
+    <section class="sectionone" style="position: relative;">
+        <nav class="navbar navbar-dark" style="height: 120px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/finallogo.jpg" alt="">
+                </a>
+                <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="navbar-toggler-icon">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <a href="index.html">
+                            <li><button class="dropdown-item" style="color: #ffd800; " type="button">Home</button></li>
+                        </a>
+                        <a href="aboutus.html">
+                            <li><button class="dropdown-item" style="color: #ffd800; " type="button">About US</button>
+                            </li>
+                        </a>
+
+                        <a href="packages.html">
+                            <li><button class="dropdown-item" style="color: #ffd800; " type="button">Packages</button>
+                            </li>
+                        </a>
+                        <a href="contactus.html">
+                            <li><button class="dropdown-item" style="color: #ffd800; " type="button">Contact Us</button>
+                            </li>
+                        </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- section2 vdo -->
+    <section class="sectiontabdata">
+        <div class="tabContainer container-fluid">
+            <div class="buttonContainer">
+                <button onclick="showPanel(0,'#383838')">Itinerary</button>
+                <button onclick="showPanel(1,'#383838')">Passengers Guidlines</button>
+                <button onclick="showPanel(2,'#383838')">Inclusions & Exclusions</button>
+                <button onclick="showPanel(3,'#383838')">Policy</button>
+            </div>
+            <div class="tabPanel">
+                <p style="color:white;" class="mydataclass">Get ready for Samaara Travel best-selling package of Char
+                    Dham Yatra by Helicopter for
+                    4 nights and 5 days this year. This divine yatra starting and ending point is Dehradun, covering the
+                    all sacred Char Dham
+                </p>
+                <h2 style="color: #ffd800;" class="mydtathead">Yamunotri, Gangotri, Kedarnath and Badrinath</h2>
+                <p style="color:white;" class="mydataclass">VIP Darshans, Comfortable stays, Delicious meals, Special
+                    puja, Luxurious Services, and Informed handlers at every location are the highlights of this
+                    bestselling Chardham Ya- tra tour.</p>
+                <p style="color:white;" class="mydataclass">Departure and Return Location :- DEHRADUN (UTTARAKHAND
+                    INDIA)
+                    Have a look at the detailed Chardham tour itinerary that will allure you to book Chard- ham package
+                    right away.
+                </p>
+                <table class="table table-bordered" style="border: 2px solid #ffd800;color:white;">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="background-color: #ffd800;color:#ffd800;">First</th>
+                            <th scope="col" style="background-color: #ffd800;color:#ffd800;">Last</th>
+                            <th scope="col" style="background-color: #ffd800;color:#ffd800;">First</th>
+                            <th scope="col" style="background-color: #ffd800;color:#ffd800;">Last</th>
+                            <th scope="col" style="background-color: #ffd800;color:#ffd800;">Last</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- day 1 -->
+                        <tr>
+                            <td class="mydatai">DAY 01: </td>
+                            <td colspan="4">
+                                <p class="nydata2">(Dehradun to Yamunotri)</p>
+                                <p class="nydata2">06:00 AM Departure Sahastradhara Helipad, Dehradun (By Helicopter)
+                                </p>
+                                <p class="nydata2">06:30 AM Arrival Kharsali Helipad, Yamunotri</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <p class="mydata3">
+                                    Co-coordinator of Samaara Travel will take you to the state government helipad on
+                                    Sa- hastradhara Road, Dehradun from where we will fly for Yamunotri. You are ad-
+                                    vised to leave your hotel early and remain energetic throughout this devotional
+                                    chard- ham yatra.
+                                </p>
+                                <p class="mydata3">Enter the land of lords!</p>
+                                <p class="mydata3">Upon arrival at Kharsali (Ya- munotri), you are welcomed by our
+                                    handlers; they will unload your baggage and take you to the hotel.</p>
+                                <p class="mydata3">Relish a fresh breakfast and leave for darshan in palki/pony to
+                                    Yamunotri temple which is around 5 km trek. Enjoy your ride with the glory of
+                                    nature!</p>
+                                <p class="mydata3">After divine darshan you’ll return to ho- tel by lunch time. Have
+                                    your lunch and spend few hours of relax. In Evening pay a visit to ancient Shani
+                                    Temple (subjected to time and weather) nearby and spend the night at your hotel,
+                                    after having dinner.
+
+                                </p>
+                            </td>
+                        </tr>
+                        <!-- day 2 -->
+                        <tr>
+                            <td class="mydatai">DAY 02: </td>
+                            <td colspan="4">
+                                <p class="nydata2">(Yamunotri to Gangotri)</p>
+                                <p class="nydata2">07:45 AM Departure Kharsali Helipad, Yamunotri (By Helicopter)</p>
+                                <p class="nydata2">08:30 AM Arrival Harsil Helipad, Gangotri</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <p class="mydata3">
+                                    Enter the most beautiful valleys in Uttarakhand, called the mini Switzerland, Gan-
+                                    gotri.
+                                </p>
+                                <p class="mydata3">Our handlers will take you to the nearby Luxurious hotel. After an
+                                    Early morning breakfast, you’ll leave for Gangotri temple VIP darshan in Cab which
+                                    is 20 kms away from hotel.</p>
+                                <p class="mydata3">Tune yourself to the high altitude and enjoy the picturesque paradise
+                                    on earth; Gangotri Dham.</p>
+                                <p class="mydata3">You’ll get all the basic and leisure facil- ities such as a premium
+                                    accommoda- tion with ensuite washrooms, de- licious vegetarian food, Short walks and
+                                    local sightseeing around the beautiful unexplored valley.</p>
+                                <p class="mydata3">Your second day of chardham yatra package by helicopter ends with a
+                                    freshly prepared dinner and an evening bonfire before falling asleep.</p>
+                                <p class="mydata3">After an early morning breakfast, you’ll leave for Kedarnath (It is
+                                    recommended to take heavy breakfast at Harsil as we will directly go to temple at
+                                    Kedarnath and come back around 3:00 – 4:00 PM).
+
+                                </p>
+
+
+                            </td>
+                        </tr>
+                        <!-- day3 -->
+                        <tr>
+                            <td class="mydatai">DAY 03: </td>
+                            <td colspan="4">
+                                <p class="nydata2">(Gangotri to Kedarnath)</p>
+                                <p class="nydata2">09:00 AM	Departure Harsil Helipad, Gangotri (By Helicopter)</p>
+                                <p class="nydata2">09:30 AM	Arrival Kedarnath Helipad (Base Camp)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <p class="mydata3">Welcome to the mountain of amalgam of spirituality.</p>
+                                <p class="mydata3">Natural peace, religious zest and snow capped peaks of kedarnath dham will enchant your heart and making it most heritage site among all Chardham.</p>
+                                <p class="mydata3">You will arrive at Guptkashi/phata helipad from Gangotri, after changing the chop- per you’ll fly for Kedarnath which is 10 minutes flying from Guptkashi.  </p>
+                                <p class="mydata3">You may have to wait sometime for 10 minutes to 3 hours during chopper change because of shuttle slots/weather or technical reasons.</p>
+                                <p class="mydata3">As you reach the kedarnath, You will witness the beauty of changing colors in the sky</p>
+                                <p class="mydata3">Our handlers and Panditji shall take you for VIP Darshan and Jal Abhishek in the Kedarnath Temple</p>
+                                <p class="mydata3">Your stay is arranged at Guptkashi, After darshan we will take you from Kedarnath helipad to Guptkashi / Phata Helipad</p>
+                                <p class="mydata3">Another day of your chardham yatra tour ends in the land of kedara with delicious dinner.</p>
+                                <p class="mydata3">Sleep snug to energize yourself for another beautiful day.</p>
+                            </td>
+                        </tr>
+                        <!-- day4 -->
+                        <tr>
+                            <td class="mydatai">DAY 04: </td>
+                            <td colspan="4">
+                                <p class="nydata2">(Kedarnath to Badrinath)</p>
+                                <p class="nydata2">10:00 AM	Departure Kedarnath Helipad (By Helicopter)</p>
+                                <p class="nydata2">10:45 AM	Arrival Badrinath Helipad</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <p class="mydata3">Head to the beautiful city of Narayan, Badrinath.</p>
+                                <p class="mydata3">On the fourth day of your chardham package itinerary, you’ll be heading to Badrinath and on the way you’ll see the deep
+                                    valleys and majestic view of lofty Himalayas.
+                                    </p>
+                                <p class="mydata3">Upon arrival at Badrinath helipad, Our handlers will transfer you to the Hotel where you can relish your breakfast / lunch and pay visit to Badri Narayan VIP darshan.</p>
+                                <p class="mydata3">Our handler will take you for tem- ple in evening for vishnusahasar- nam path.</p>
+                                <p class="mydata3">Spend leisurely hours in the Mana Village which is near to religious site of Badrinath.</p>
+                                <p class="mydata3">End your day with the comfortable stay and delectable dinner at your hotel.</p>
+                                <p class="mydata3">Make the best out of your religious yatra holiday by cherishing the Valley of Lord Narayan from close quarters.</p>
+                            </td>
+                        </tr>
+                        <!-- day 5 -->
+                        <tr>
+                            <td class="mydatai">DAY 05: </td>
+                            <td colspan="4">
+                                <p class="nydata2">(Badrinath to Dehradun)</p>
+                                <p class="nydata2">10:00 AM	Departure Badrinath Helipad (By Helicopter)</p>
+                                <p class="nydata2">11:30 AM	Arrival DehradunHelipad (Will Provide Drop)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <p class="mydata3">In the morning after having a hearty breakfast, bow your head to Badri Narayan tem- ple and fly back to Dehradun with positive vibes and pleasant memories of Chardham Yatra by helicopter package.</p>
+                                <p class="mydata3">Timings are tentative and may get changed subjected to permissions and weather condi- tions.</p>
+                                <p class="mydata3">We recommend you to book your return flight one day later.</p>
+                            </td>
+                        </tr>
+                      
+                    </tbody>
+                </table>
+            </div>
+            <div class="tabPanel  mytable2">
+                <h2 style="color:white;font-size:15px;">GUIDELINES FOR PASSENGERS</h2>
+                <ul style="color: white;">
+                    <li style="font-size:15px;text-align:left;">Maximum 05/06 Passengers/Guest will be allowed in 01 Helicopter.</li>
+                    <li style="font-size:15px;text-align:left;">Only 5 kg luggage per passenger will be permitted due to limited space in the helicopter. Passengers bringing excess baggage would not be allowed to take the same in the chopper. At any cost we won’t allow passenger to take more luggage. This  is the standard safety rule for Aviation.</li>
+                    <li style="font-size:15px;text-align:left;">All temples are located at high altitude areas. Passengers are advice to carry regular medical kit.</li>
+                    <li style="font-size:15px;text-align:left;">Timings are flexible depending on weather conditions/technical reasons/govt. permissions etc.</li>
+                    <li style="font-size:15px;text-align:left;">Passengers should carry only handbags (Soft Bags/duffle bags) as suitcases/trolley bags cannot be kept in the helicopter. Trollies are strictly not allowed.</li>
+                    <li style="font-size:15px;text-align:left;">Our 3 Helicopters fly on same day for Chardham yatra by helicopter. We may adjust passen- gers acc. to their body weight.</li>
+                    <li style="font-size:15px;text-align:left;">If individual body weight exceeds 80 KG, Extra charges of INR 200 per Kg will be applicable at Kedarnath Shuttle.</li>
+                    <li style="font-size:15px;text-align:left;">While changing the helicopter at Kedarnath or Guptkashi the waiting time is between 10 mins to 3 hrs. depending on Shuttle slots / weather conditions or technical reasons.</li>
+                    <li style="font-size:15px;text-align:left;">Passengers	may	be	divided	into	2	groups	while	changing	the	helicopter	at Kedarnath/Guptkashi shuttle depending on their body weight.</li>
+                    <li style="font-size:15px;text-align:left;">Property at Yamunotri is basic but best in the region as it is remote area and rest all prop- erties are 3 to4 star category.</li>
+                    <li style="font-size:15px;text-align:left;">Total passengers weight should not be more than 430 Kgs.</li>
+                    <li style="font-size:15px;text-align:left;">All passengers will be taken to all the helipads atleast 1 hour prior before the departure time. In this case sometimes you may have to wait at govt. helipad.</li>
+                    <li style="font-size:15px;text-align:left;">Please share your actual body weight at the time of Booking. Your body weight will be mea- sured before flying. Company have full rights to de-board a passenger incase the actual body weight exceeds than the weight given by passengers. Kindly don’t share any assumed body weight.</li>
+                </ul>
+            </div>
+            <div class="tabPanel">
+                <h2 style="font-size: 20px;color:#ffd800;">Package Inclusions</h2>
+                <ul style="color: white;">
+                    <li style="font-size:15px;text-align:left;">Pick and Drop facility from Dehradun Airport, Dehradun
+                        Bus Stand and Dehradun Railway Station.</li>
+                    <li style="font-size:15px;text-align:left;">Luxurious stay and delicious meals.</li>
+                    <li style="font-size:15px;text-align:left;">VIP darshans at every Dham</li>
+                    <li style="font-size:15px;text-align:left;">Local sightseeing by any of the SUV’s</li>
+                    <li style="font-size:15px;text-align:left;">Palki (Sedan Chair/Pony) at Yamunotri</li>
+                    <li style="font-size:15px;text-align:left;">Helicopter Shuttle Tickets for Kedar- nath</li>
+                    <li style="font-size:15px;text-align:left;">Vishnu Sahasranamam Path at Badrinath (Special Puja)
+                    </li>
+                    <li style="font-size:15px;text-align:left;">Jal Abhishek at Kedarnath</li>
+
+                </ul>
+            </div>
+            <div class="tabPanel">
+                <h2 style="font-size: 20px;color:#ffd800;">TERMS AND CONDITIONS</h2>
+                <ul style="color: white;">
+                    <li style="font-size:15px;text-align:left;">Children above the age of 2 years will be considered full ticket. Infant below 2 years are car- ried free of charge, in case of dispute birth certificate can prevail. </li>
+                    <li style="font-size:15px;text-align:left;">There is no provision of concession to children or senior citizens for helicopter yatra. </li>
+                    <li style="font-size:15px;text-align:left;">The booking has to be done in advance with a deposit of 50% of the charter amount. Re- maining 50% amount to be paid 20 Days before the journey starts. </li>
+                    <li style="font-size:15px;text-align:left;">In case the journey is not finished within the given time and passengers would not be able to Dham due to bad weather conditions/technical reasons. In this scenario company will still try to visit the all dham by extending the timeframe. Company will do all the dhams on the next day if weather condition remains poor whole day and so on. </li>
+                    <li style="font-size:15px;text-align:left;">Sometime we may change the property in emergency situation (like landlside on the way to property, electricity and any other natural circumstances). We may try to provide other property of same or upper category. </li>
+                    <li style="font-size:15px;text-align:left;">One cab will be provided to the group of upto 6 pax wherever required. </li>
+                    <li style="font-size:15px;text-align:left;">Additional amount of INR 20,000/- Per Person will be applicable incase of single occupancy. </li>
+                    <li style="font-size:15px;text-align:left;">We recommend you to book your return flight one day later. Company will not bear any cancellation of flights at any cost. </li>
+                    <li style="font-size:15px;text-align:left;">Disputes as to legality, interpretation, application or performance of services or any of its terms and conditions shall be governed by the laws of Delhi jurisdiction. </li>
+                    <li style="font-size:15px;text-align:left;">Incase of emergency and bad weather passengers will be taken back to Dehradun by other means of Transport. </li>
+                    <li style="font-size:15px;text-align:left;">No money will be refunded incase the passenger is de-boarded due to wrong given body weight. </li>
+                    <li style="font-size:15px;text-align:left;">Your luggage will be strictly not allowed in the helicopter if it is found more than 5 KG at the helipad. </li>
+                    <li style="font-size:15px;text-align:left;">Prices will remain same even incase the royalty fees changes or remains same.</li>
+                    <li style="font-size:15px;text-align:left;">In case we are completely unable to visit any dham due to bad weather situation we will re- fund proportionate money i.e if due to any reason we are unable to do 2 dhams then we will refund 50% of the payment. If unable to do 3 Dhams then we will refund 75%and so on. This refundable proportionate money is exclusive of Royalty fee, Taxes and fixed components. </li>
+                    <li style="font-size:15px;text-align:left;">Any Extra Night due to bad weather will be borne by client itself. </li>
+                    <li style="font-size:15px;text-align:left;">Mobile Network:- (Kharsali ; Airtel , BSNL) (Harsil ; BSNL) (Kedarnath ; BSNL) (Badrinath ; Airtel , BSNL). </li>
+                    <li style="font-size:15px;text-align:left;">Cancellation policy: - If customer wishes to cancel their booking they have to pay following cancellation charges.
+                        Upto 30 Days before journey  — 30% of the amount In between 15 to 30 days — 70% of the amount
+                        In between 0 t0 15 Days — No Refund
+                         </li>
+                </ul>
+                <br>
+                <h2 style="font-size: 20px;color:#ffd800;">PAYMENT POLICY</h2>
+                <ul style="color: white;">
+                    <li style="font-size:15px;text-align:left;">Deposit of 25% of the package cost at the time of
+                        booking</li>
+                    <li style="font-size:15px;text-align:left;">Need 50% payment of the package cost, 30 days prior to
+                        departure date</li>
+                    <li style="font-size:15px;text-align:left;">Need 100% payment of the package cost, 15 days prior to
+                        departure date</li>
+                </ul>
+                <br>
+                <h2 style="font-size: 20px;color:#ffd800;">CANCELLATION POLICY</h2>
+                <ul style="color: white;">
+                    <li style="font-size:15px;text-align:left;">25% of full tour cost - 30 days prior to arrival</li>
+                    <li style="font-size:15px;text-align:left;">50% of full tour cost - between 20 & 29 days prior to
+                        tour</li>
+                    <li style="font-size:15px;text-align:left;">75% of full tour cost - between 19 & 10 days prior to
+                        tour</li>
+                    <li style="font-size:15px;text-align:left;">100% - within 9 days prior to tour</li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- whatsapp enquiry -->
+    <div class="centerwalatwo">
+        <a href="https://wa.me/919971788433"> <img src="images/finalwhatsap.png " alt="Shiva photocopy rdc"
+                class="pulsewalatwo"></a>
+    </div>
+    <!-- enquiry pulse -->
+    <div class="centerwala">
+        <a href="tel:9971788433" class="pulsewala"><i class="fa fa-phone fa-2x" aria-hidden="true"
+                style="color: black;"></i> </a>
+    </div>
+    <!-- footer -->
+
+    <section class="footer myfooter" id="contactus">
+
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container-fluid">
+                    <img src="images/finallogo.jpg" alt="" style="width:150px;height:100px;">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 footer-contact">
+                            <img src="images/shivaownr.jpg" class="img-fluid" alt="">
+                            <h3 style="color:#ffd800;">Char Dham Express</h3>
+                            <p class="text-white">
+                                Office No 70 , Ground Floor , World Trade Centre<br>
+                                Babbar Road , Connaught Place ,<br>
+                                New Delhi 110001<br>
+                                <br>
+                                <strong class="text-white" style="color:#ffd800;">WhatsApp:</strong> +91-9971788433<br>
+                                <strong class="text-white" style="color:#ffd800;">Phone:</strong> +91-9811137247<br>
+                                <strong class="text-white" style="color:#ffd800;">Email:</strong>
+                                Chardhamexpress2021@gmail.com<br>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-links">
+
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-links p-3">
+
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-newsletter">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-md-flex py-4 socialsection">
+                <!-- <div class="mr-md-auto text-center text-md-left" style="font-size: 10px;">
+                                       copy rightdata
+                </div> -->
+                <div class="social-links text-center text-md-right pt-3 pt-md-0 ">
+                    <a href=""> <i class="fa fa-facebook  fa-3x" aria-hidden="true"></i> </a>
+                    <a href=""> <i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+                    <a href=""> <i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </footer>
+        <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+    </section>
+
+    </section>
+    <!--  -->
+    <br>
+    <section class="sectionlastcopyright" style="height: 50px;background-color:#ffd800;">
+        <div class="copyright mycopyboxcetenr" style="color: #383838;">
+            &copy; Copyright <strong><span>Char Dham Express</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits text-white">
+            Designed & Developed by <a href="https://slanzapanika.com">Agranshu slanzapanika</a>
+        </div>
+    </section>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            center: true,
+            autoWidth: false,
+            items: 2,
+            loop: true,
+            autoplayHoverPause: true,
+            nav: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1520,
+            smartSpeed: 1500,
+            animateIn: 'linear',
+            animateOut: 'linear',
+            responsive: {
+                0: {
+                    items: 2,
+                },
+                350: {
+                    items: 2,
+                },
+                600: {
+                    items: 4,
+                },
+                800: {
+                    items: 4,
+                },
+                1024: {
+                    items: 6,
+                },
+            }
+        });
+    </script>
+    <script src="myScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -55,5 +55,11 @@
     .sectiontabdata .tabContainer .buttonContainer button{
                 font-size: 10px;
                 height: 70px;
-            }   
+            } 
+    .sectiontabdata .tabContainer .tabPanel .mydataclass{
+        font-size: 10px;
+    }  
+    .sectiontabdata .tabContainer .tabPanel .mydtathead{
+        font-size: 15px;
+    }
 }

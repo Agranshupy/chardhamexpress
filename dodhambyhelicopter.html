@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logoo.png" type="image/gif" sizes="20x20">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="cssfiles/mainstyletwo.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" href="cssfiles/owl.carousel.css">
+    <link rel="stylesheet" href="cssfiles/owl.theme.green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jsfiles/jquery.min.js"></script>
+    <script src="jsfiles/owl.carousel.min.js"></script>
+    <script src="myScript.js"></script>
+    <title>Char Dham Express</title>
+
+</head>
+<style>
+    .team-area .single-team img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+    .single-team {
+        width: 100%;
+        height: 320px;
+
+        box-sizing: border-box;
+        background: #fff;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        transition: .6s ease-out;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .single-team:hover {
+        transform: translateY(25px);
+    }
+
+    .single-team:hover:before {
+        opacity: 1;
+
+    }
+
+    .single-team:hover .ream-text {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .single-team:before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #000, transparent);
+        z-index: 2;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .single-team .ream-text {
+        position: relative;
+        z-index: 3;
+        color: #fff;
+        opacity: 0;
+        transform: translateY(60px);
+        transition: 0.5s;
+
+    }
+
+    .ream-text h2 {
+        margin: 0;
+        font-family: Shrikhand;
+        letter-spacing: 3px;
+
+    }
+
+    .ream-text p {
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin-top: 8px;
+        font-family: poppings;
+    }
+
+    .ream-text a {
+        width: 100%;
+        height: 50px;
+        display: inline-block;
+        border: 3px solid #e37d1d;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
+
+    }
+
+    .ream-text a i {
+        color: #fff;
+        padding: 10px 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <!-- sectionone menubar -->
+    <section class="sectionone" style="position: relative;">
+        <nav class="navbar navbar-dark" style="height: 120px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/finallogo.jpg" alt="">
+                </a>
+                <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="navbar-toggler-icon">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <a href="index.html">
+                            <li><button class="dropdown-item" style="color: #ffd800; " type="button">Home</button></li>
+                        </a>
+                        <a href="aboutus.html">
+                            <li><button class="dropdown-item" style="color: #ffd800; " type="button">About US</button>
+                            </li>
+                        </a>
+
+                        <a href="packages.html">
+                            <li><button class="dropdown-item" style="color: #ffd800; " type="button">Packages</button>
+                            </li>
+                        </a>
+                        <a href="contactus.html">
+                            <li><button class="dropdown-item" style="color: #ffd800; " type="button">Contact Us</button>
+                            </li>
+                        </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- section2 vdo -->
+    <section class="sectiontabdata">
+        <div class="tabContainer container-fluid">
+            <div class="buttonContainer">
+                <button onclick="showPanel(0,'#383838')">Itinerary</button>
+                <button onclick="showPanel(1,'#383838')">Price</button>
+                <button onclick="showPanel(2,'#383838')">Inclusions & Exclusions</button>
+                <button onclick="showPanel(3,'#383838')">Policy</button>
+            </div>
+            <div class="tabPanel">
+                <h2 style="color: #ffd800;" class="mydtathead">Do Dham Yatra by Helicopter</h2>
+                <p style="color:white;" class="mydataclass">Take a break from tangled role of your daily life and head
+                    to the land of delight and spirituality. This Badrinath and Kedarnath Yatra by helicopter designed
+                    particularly for that spiritual and adventure loving traveler in you.</p>
+                <p style="color:white;" class="mydataclass">Enjoy your same day trip to Dodham Yatra, one of the oldest
+                    and well known pilgrimage sites in India.</p>
+                <p style="color:white;" class="mydataclass">From competitive pricing and a top grade services, Samaara
+                    Travel brings you to this Badrinath and Kedarnath tour package which includes comfortable helicopter
+                    ride, Exclusive VIP darshan, charming Himalayan culture and toothsome lunch.</p>
+                <p style="color:white;" class="mydataclass">All around by thrilling sites and soothing serenity, the
+                    Yatra offers a much needed break from the hustle and bustle of life and take you into the land of
+                    lord.</p>
+                <p style="color:white;" class="mydataclass">Book your memorable day! Avail this divine helicopter Yatra
+                    with us.</p>
+                <p style="color:white;" class="mydataclass">Departure and Return Location: - Sahastradhara Helipad,
+                    Dehradun Lowest Price Guarantee!</p>
+                <p class="mydataclass">Kedarnath & Badrinath –Charter Itinerary | Same Day Experience the ethereal
+                    beauty of nature with this amazing divine packed tour! </p>
+                <table class="table table-bordered" style="border: 2px solid #ffd800;color:white;">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="background-color: #ffd800;color:#383838;">Start Time</th>
+                            <th scope="col" style="background-color: #ffd800;color:#383838;">End Time</th>
+                            <th scope="col" style="background-color: #ffd800;color:#383838;">Activity Details</th>
+                            <th scope="col" style="background-color: #ffd800;color:#383838;"></th>
+                            <th scope="col" style="background-color: #ffd800;color:#383838;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- day 1 -->
+                        <tr>
+                            <td class="mydatai">11:00</td>
+                            <td class="mydatai">11:30</td>
+                            <td colspan="3">
+                                <p class="nydata2">S’dhara to Kedarnath By Helicopter</p>
+
+                            </td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td class="mydatai">12:00</td>
+                            <td class="mydatai">14:00</td>
+                            <td colspan="3">
+                                <p class="nydata2">Kedarnath Ji VIP Darshan</p>
+
+                            </td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td class="mydatai">14:00</td>
+                            <td class="mydatai">14:30</td>
+                            <td colspan="3">
+                                <p class="nydata2">Sirsi to Badrinath by Helicopter</p>
+
+                            </td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td class="mydatai">14:30</td>
+                            <td class="mydatai">15:00</td>
+                            <td colspan="3">
+                                <p class="nydata2">Lunch at Badrinath</p>
+
+                            </td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td class="mydatai">15:00</td>
+                            <td class="mydatai">16:30</td>
+                            <td colspan="3">
+                                <p class="nydata2">VIP Darshan at Badrinath</p>
+
+                            </td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                            <td class="mydatai">16:30</td>
+                            <td class="mydatai">17:30</td>
+                            <td colspan="3">
+                                <p class="nydata2">Badrinath to S’dhara</p>
+
+                            </td>
+                        </tr>
+                        <!--  -->
+
+                      
+                    </tbody>
+                    
+                </table>
+                *Timings are flexible and subjected to weather condition and fleet position after circuit☺
+                <br>
+                <br>
+                <h2 style="color: #ffd800;" class="mydtathead">Kedarnath Darshan</h2>
+                <p style="color:white;" class="mydataclass">Upon arrival at the Sahastradhara helipad, our representative will welcome you and escort you to your helicopter.
+                    From there you’ll be taken to sirsi, en route you will be treated with breathtaking view of mountains and gentle rolling hills.
+                    
+                    </p>
+                <p style="color:white;" class="mydataclass">Meanwhile, when you’ll be amusing with magic of snow and divine beauty our helicopter will take you to the Kedarnath
+                    Now clasp your hands and bow your head as you have reached on the land of Kedar and you can straight away proceed for the VIP darshan at Kedarnath temple. Spend few happy and leisure hours in the soothing nature.
+                    </p>
+                <br>
+                <h2 style="color: #ffd800;" class="mydtathead">Badrinath Darshan</h2>
+                <p style="color:white;" class="mydataclass">Second half of your day will captivate your heart as you are heading towards a beauteous destination, Badrinath.</p>
+                <p style="color:white;" class="mydataclass">Feel the cool breeze and soothing chants of priest as you embark into the Badrinath temple for VIP darshan.
+                    Be dazzled by the breathtaking sights of Badrinath and you’ll be transferred to hotel
+                    Sarovar Portico for delectable lunch.
+                    </p>
+                <p style="color:white;" class="mydataclass">With this specially designed Badrinath helicopter tour, enjoy the much needed family- time in the divine lap of nature.
+                    After darshan, leave for S’dhara helipad.
+                    </p>
+
+            </div>
+            <div class="tabPanel  mytable2">
+               <h2 style="color: #ffd800;">NET PRICE FOR YOU:-</h2>
+               <p style="color: white; font-size:20px;">TOTAL PRICE FOR DODHAM (KEDARNATH AND BADRINATH) YATRA BY HELICOPTER (SAME DAY) IS INR 100,000/- PER PERSON (5% GST EXTRA)</p>
+            </div>
+            <div class="tabPanel">
+                <h2 style="font-size: 20px;color:#ffd800;">Package Inclusions</h2>
+                <ul style="color: white;">
+                    <li style="font-size:15px;text-align:left;">Auspicious VIP Darshan at Badrinath and Kedarnath Temple
+                    </li>
+                    <li style="font-size:15px;text-align:left;">Delicious lunch at Badrinath</li>
+                    <li style="font-size:15px;text-align:left;">Fuel, Toll, Parking Fee and Driver Allowance</li>
+                    <li style="font-size:15px;text-align:left;">Shuttle service at Kedarnath with priority Puja Pass
+                    </li>
+                    <li style="font-size:15px;text-align:left;">Car Service for local sightseeing at Badrinath, if
+                        needed</li>
+                </ul>
+            </div>
+            <div class="tabPanel">
+                <h2 style="color:#ffd800;font-size:15px;">GUIDELINES FOR PASSENGERS</h2>
+                <ul style="color: white;">
+                    <li style="font-size:15px;text-align:left;">Maximum 04 Passengers/Guest will be allowed in 01 Helicopter</li>
+                    <li style="font-size:15px;text-align:left;">Only 5 kg luggage per passenger will be permitted due to limited space in the helicopter. Passengers bringing excess baggage would not be allowed to take the same in the chopper.</li>
+                    <li style="font-size:15px;text-align:left;">At these locations, it becomes cold throughout, so passengers must carry woolen clothes with them.</li>
+                    <li style="font-size:15px;text-align:left;">Both temples are located at high altitude areas. Passengers are advice to carry regular medical kit.</li>
+                    <li style="font-size:15px;text-align:left;">Passengers should carry only handbags as suitcases cannot be kept in the helicopter.</li>
+                    <li style="font-size:15px;text-align:left;">Total passengers weight should not be more than 400 KG.</li>
+                </ul>
+                <br>
+                <h2 style="font-size: 20px;color:#ffd800;">TERMS AND CONDITIONS</h2>
+                <ul style="color: white;">
+                    <li style="font-size:15px;text-align:left;">Children above the age of 2 years will be considered full ticket.</li>
+                    <li style="font-size:15px;text-align:left;">There is no provision of concession to children or senior citizens for helicopter Yatra.</li>
+                    <li style="font-size:15px;text-align:left;">The booking has to be done in advance with a deposit of 50% of the charter amount.</li>
+                    <li style="font-size:15px;text-align:left;">Any of the Dham can be done earlier depending on weather and maunder kapat timings.</li>
+                    <li style="font-size:15px;text-align:left;">Full amount has to be deposited 7 days prior to date of journey.</li>
+                    <li style="font-size:15px;text-align:left;">Rescheduling of booking can be done prior to 7 days of journey date and is subject to availability with 15% extra charges. In case the rescheduling is requested with less than 7 days to the journey then booking will be treated as cancelled.</li>
+                </ul>
+                <br>
+                <h2 style="font-size: 20px;color:#ffd800;">PAYMENT POLICY</h2>
+                <ul style="color: white;">
+                    <li style="font-size:15px;text-align:left;">Deposit of 25% of the package cost at the time of
+                        booking</li>
+                    <li style="font-size:15px;text-align:left;">Need 50% payment of the package cost, 30 days prior to
+                        departure date</li>
+                    <li style="font-size:15px;text-align:left;">Need 100% payment of the package cost, 15 days prior to
+                        departure date</li>
+                </ul>
+                <br>
+                <h2 style="font-size: 20px;color:#ffd800;">CANCELLATION POLICY</h2>
+                <ul style="color: white;">
+                    <li style="font-size:15px;text-align:left;">If passengers wish to cancel their booking then they will have to pay following cancellation charges</li>
+                    <li style="font-size:15px;text-align:left;">35 days before Journey 30% of amount</li>
+                    <li style="font-size:15px;text-align:left;">In between 20 to 35 days before journey	70% of amount</li>
+                    <li style="font-size:15px;text-align:left;">In between 0 to 20 before Journey No Refund</li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- whatsapp enquiry -->
+    <div class="centerwalatwo">
+        <a href="https://wa.me/919971788433"> <img src="images/finalwhatsap.png " alt="Shiva photocopy rdc"
+                class="pulsewalatwo"></a>
+    </div>
+    <!-- enquiry pulse -->
+    <div class="centerwala">
+        <a href="tel:9971788433" class="pulsewala"><i class="fa fa-phone fa-2x" aria-hidden="true"
+                style="color: black;"></i> </a>
+    </div>
+    <!-- footer -->
+
+    <section class="footer myfooter" id="contactus">
+
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container-fluid">
+                    <img src="images/finallogo.jpg" alt="" style="width:150px;height:100px;">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 footer-contact">
+                            <img src="images/shivaownr.jpg" class="img-fluid" alt="">
+                            <h3 style="color:#ffd800;">Char Dham Express</h3>
+                            <p class="text-white">
+                                Office No 70 , Ground Floor , World Trade Centre<br>
+                                Babbar Road , Connaught Place ,<br>
+                                New Delhi 110001<br>
+                                <br>
+                                <strong class="text-white" style="color:#ffd800;">WhatsApp:</strong> +91-9971788433<br>
+                                <strong class="text-white" style="color:#ffd800;">Phone:</strong> +91-9811137247<br>
+                                <strong class="text-white" style="color:#ffd800;">Email:</strong>
+                                Chardhamexpress2021@gmail.com<br>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-links">
+
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-links p-3">
+
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-newsletter">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-md-flex py-4 socialsection">
+                <!-- <div class="mr-md-auto text-center text-md-left" style="font-size: 10px;">
+                                       copy rightdata
+                </div> -->
+                <div class="social-links text-center text-md-right pt-3 pt-md-0 ">
+                    <a href=""> <i class="fa fa-facebook  fa-3x" aria-hidden="true"></i> </a>
+                    <a href=""> <i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+                    <a href=""> <i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </footer>
+        <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+    </section>
+
+    </section>
+    <!--  -->
+    <br>
+    <section class="sectionlastcopyright" style="height: 50px;background-color:#ffd800;">
+        <div class="copyright mycopyboxcetenr" style="color: #383838;">
+            &copy; Copyright <strong><span>Char Dham Express</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits text-white">
+            Designed & Developed by <a href="https://slanzapanika.com">Agranshu slanzapanika</a>
+        </div>
+    </section>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            center: true,
+            autoWidth: false,
+            items: 2,
+            loop: true,
+            autoplayHoverPause: true,
+            nav: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1520,
+            smartSpeed: 1500,
+            animateIn: 'linear',
+            animateOut: 'linear',
+            responsive: {
+                0: {
+                    items: 2,
+                },
+                350: {
+                    items: 2,
+                },
+                600: {
+                    items: 4,
+                },
+                800: {
+                    items: 4,
+                },
+                1024: {
+                    items: 6,
+                },
+            }
+        });
+    </script>
+    <script src="myScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
