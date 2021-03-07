@@ -54,12 +54,19 @@ width: 250px;
   .sectionone .navbar .container-fluid .navbar-brand img{
   width: 150px;
   }
-  .sectionone .navbar .container-fluid .navbar-brand {
-    display: block;
-    margin-left: 0px;
-  
-    
-    }
+ 
+}
+@media(max-width:560px){
+  .sectionone .navbar .container-fluid .navbar-brand img{
+  width: 150px;
+  }
+ 
+}
+@media(max-width:350px){
+  .sectionone .navbar .container-fluid .navbar-brand img{
+  width: 90px;
+  }
+ 
 }
 .sectionone .collapse .p-4 .nav-item a{
   color: #ffd800;
@@ -107,7 +114,6 @@ width: 250px;
   }
   .myfooter #footer .socialsection .social-links .fa-youtube{
     color: #e84118;
-  
     background-color: #fff;
     padding: 3px;
   

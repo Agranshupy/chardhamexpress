@@ -118,8 +118,9 @@
     <section class="sectionone" style="position: relative;">
         <nav class="navbar navbar-dark" style="height: 120px;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="images/finallogo.jpg" alt="">
+                <a href="index.html"><i class="fa fa-home fa-3x" aria-hidden="true" style="color: #ffd800;"></i></a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/finallogo.jpg"  alt="">
                 </a>
                 <div class="btn-group">
                     <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
@@ -137,7 +138,10 @@
                             <li><button class="dropdown-item" style="color: #ffd800; " type="button">About US</button>
                             </li>
                         </a>
-                        <li><button class="dropdown-item" style="color: #ffd800; " type="button">Packages</button></li>
+                        <a href="packages.html">
+                            <li><button class="dropdown-item" style="color: #ffd800; " type="button">Packages</button>
+                            </li>
+                        </a>
                         <a href="contactus.html">
                             <li><button class="dropdown-item" style="color: #ffd800; " type="button">Contact Us</button>
                             </li>
@@ -167,7 +171,7 @@
                     <div class="myicon"><i class="fa fa-phone" aria-hidden="true"></i></div>
                     <div class="mytext">
                         <h3>Phone</h3>
-                        <p>+91-9971788433 <br>+91-9811137247</p>
+                        <p>+91-9971788433 <br>+91-9811137247 <br>0120-4568774</p>
                     </div>
                 </div>
                 <!--  -->
@@ -175,7 +179,7 @@
                     <div class="myicon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
                     <div class="mytext">
                         <h3>Email</h3>
-                        <p style="font-size: 12px;">Chardhamexpress2021@gmail.com</p>
+                        <p style="font-size: 12px;">info@chardhamexpress.com</p>
                     </div>
                 </div>
             </div>
@@ -183,37 +187,55 @@
                 <form>
                     <h2>Query Form</h2>
                     <div class="inputbox">
-                        <input type="text" name="" id="formGroupExampleInput" required>
+                        <input type="text" name="" id="name" required>
                         <span>Name</span>
                     </div>
                     <div class="inputbox">
-                        <input type="number" name="" id="formGroupExampleInput3" required>
+                        <input type="number" name="" id="phonenumber" required>
                         <span>Contact Number</span>
                     </div>
                     <div class="inputbox">
-                        <input type="email" name="" id="formGroupExampleInput2" required>
+                        <input type="email" name="" id="emailid" required>
                         <span>Email</span>
                     </div>
                     <div class="inputbox">
-                        <input type="text" name="" id="formGroupExampleInput" required>
+                        <input type="text" name="" id="dateoftravel" required>
                         <span>Date of Travel </span>
                     </div>
                     <div class="inputbox">
-                        <input type="text" name="" id="formGroupExampleInput" required>
-                        <span>No Of Adult (No of Children)</span>
+                        <input type="text" name="" id="noofadults" required>
+                        <span>No Of Adult</span>
                     </div>
                     <div class="inputbox">
-                        <input type="text" name="" id="formGroupExampleInput4" required>
+                        <input type="text" name="" id="noofadults" required>
+                        <span>No of Children</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="" id="message" required>
                         <span>Message</span>
                     </div>
                     <div class="inputbox">
-                        <input type="button" name="" id="" value="Submit">
+                        <input type="button" name="" id="" value="Submit" onclick="mynewfun()">
 
                     </div>
                 </form>
             </div>
         </div>
     </section>
+    <script>
+        console.log('hello');
+        function mynewfun() {
+          var nam = document.getElementById('name').value; 
+          var emaildata = document.getElementById('emailid').value;
+          var dot=document.getElementById('dateoftravel').value;
+          var noofadult=document.getElementById('noofadults').value;
+          var phon = document.getElementById('phonenumber').value;
+          var msg = document.getElementById('message').value;
+          console.log(msg)
+          var result='https://chardham.herokuapp.com/sendmail?nam=' + nam +'&emaildata=' + emaildata + '&phon=' + phon + '&dot='+ dot + '&noa=' + noofadult +'&msg=' + msg + '&rdurl=' + 'https://www.google.com' ; 
+          window.location.href = result;
+        }
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
@@ -245,8 +267,9 @@
                             New Delhi 110001<br>
                             <br>
                             <strong class="text-white" style="color:#ffd800;">WhatsApp:</strong>  +91-9971788433<br>
+                            <strong class="text-white" style="color:#ffd800;">Phone:</strong>  0120-4568774<br>
                             <strong class="text-white" style="color:#ffd800;">Phone:</strong>   +91-9811137247<br>
-                            <strong class="text-white" style="color:#ffd800;">Email:</strong> Chardhamexpress2021@gmail.com<br>
+                            <strong class="text-white" style="color:#ffd800;">Email:</strong>info@chardhamexpress.com<br>
                         </p>
                     </div>
                     <div class="col-lg-2 col-md-6 footer-links">
@@ -265,7 +288,7 @@
             <!-- <div class="mr-md-auto text-center text-md-left" style="font-size: 10px;">
                                    copy rightdata
             </div> -->
-            <div class="social-links text-center text-md-right pt-3 pt-md-0 ">
+            <div class="social-links text-center text-md-right pt-3 pt-md-0 " style="display: block; margin-left: auto;margin-right: auto;">
                 <a href=""> <i class="fa fa-facebook  fa-3x" aria-hidden="true"></i> </a>
                 <a href=""> <i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a>
                 <a href="#"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
