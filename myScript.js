@@ -6,8 +6,8 @@ function showPanel(panelIndex,colorCode) {
         node.style.backgroundColor="";
         node.style.color="";
     });
-    tabButtons[panelIndex].style.backgroundColor=colorCode;
-    tabButtons[panelIndex].style.color="white";
+    tabButtons[panelIndex].style.backgroundColor="#ffd800";
+    tabButtons[panelIndex].style.color="black";
     tabPanels.forEach(function(node){
         node.style.display="none";
     });

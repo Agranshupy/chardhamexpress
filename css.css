@@ -12,7 +12,6 @@
 }
 .tabContainer .buttonContainer button{
     width: 25%;
-    
     float: left;
     border: none;
     outline:none;
@@ -20,18 +19,17 @@
     padding: 8px;
     font-family: sans-serif;
     font-size: 18px;
-    background-color: #eee;
+    background-color: #383838;
+    color: white;
 }
 .tabContainer .buttonContainer button:hover{
     background-color: #ffd800;
-   
-
 }
 .tabContainer .tabPanel{
     background-color: gray;
     color: white;
     text-align: left;
-    padding-top: 105px;
+    padding-top: 5px;
     box-sizing: border-box;
     font-family: sans-serif;
     font-size: 22px;
